@@ -1,0 +1,99 @@
+* {
+  text-align: center;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 20%, #334155, #0f172a 55%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 16px;
+}
+
+.container-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.container {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 8px solid #f8fafc;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(2, 6, 23, 0.45);
+  background-color: #f8fafc;
+  justify-content: center;
+  align-items: center;
+  touch-action: none;
+  user-select: none;
+}
+
+.pixel {
+  background-color: white;
+  min-height: 5px;
+  min-width: 5px;
+  border: 1px solid #e5e7eb;
+}
+
+button {
+  border-radius: 999px;
+  border: 2px solid #f8fafc;
+  padding: 10px 18px;
+  background: linear-gradient(180deg, #1d4ed8, #1e40af);
+  color: #f8fafc;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.14s ease, box-shadow 0.14s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(30, 64, 175, 0.35);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+h1 {
+  margin: 0 0 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hint {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.palette-label {
+  align-self: center;
+  font-weight: bold;
+}
+
+.color-picker {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #f8fafc;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  padding: 2px;
+}

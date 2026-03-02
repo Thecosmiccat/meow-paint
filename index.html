@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Etch-a-sketch</h1>
+    <p class="hint">Click and hold inside the grid to draw.</p>
+    <div class="button-container">
+      <button class="size-button" onclick="changeSize()">Change grid size</button>
+      <button class="clear-button" onclick="clearGrid()">Clear grid</button>
+      <label class="palette-label" for="color-picker">Color palette</label>
+      <input id="color-picker" class="color-picker" type="color" value="#000000" />
+    </div>
+    <div class="container-container">
+      <div class="paint-container"></div>
+      <div class="container"></div>
+      <div class="tool-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
